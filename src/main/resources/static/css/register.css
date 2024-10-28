@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Open Sans", sans-serif;
+
+}
+
+
+
+body {
+
+    margin-top: 100px;
+    margin-top: 50px;
+
+    padding-bottom: 50px;
+
+    font-family: 'Arial', sans-serif;
+
+    height: 100vh;
+
+    background-image: url('https://res.cloudinary.com/dbleggv6z/image/upload/v1729603445/RevShop/hero-bg_qfg5ll.jpg'); /* Update with your image path */
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+body::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: url("https://res.cloudinary.com/dbleggv6z/image/upload/v1729603445/RevShop/hero-bg_qfg5ll.jpg"), #000;
+
+  background-position: center;
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+
+}
+
+
+
+.wrapper {
+
+
+
+  width: 400px;
+
+  border-radius: 8px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  backdrop-filter: blur(8px);
+
+  -webkit-backdrop-filter: blur(8px);
+
+}
+
+
+
+form {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+h2 {
+
+  font-size: 2rem;
+
+  margin-bottom: 20px;
+
+  color: #fff;
+
+}
+
+
+
+.input-field {
+
+  position: relative;
+
+  border-bottom: 2px solid #ccc;
+
+  margin: 15px 0;
+
+}
+
+
+
+.input-field label {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 0;
+
+  transform: translateY(-50%);
+
+  color: #fff;
+
+  font-size: 16px;
+
+  pointer-events: none;
+
+  transition: 0.15s ease;
+
+}
+
+
+
+.input-field input {
+
+  width: 100%;
+
+  height: 40px;
+
+  background: transparent;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 16px;
+
+  color: #fff;
+
+}
+
+
+
+.input-field input:focus~label,
+
+.input-field input:valid~label {
+
+  font-size: 0.8rem;
+
+  top: 10px;
+
+  transform: translateY(-120%);
+
+}
+
+
+
+.forget {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin: 25px 0 35px 0;
+
+  color: #fff;
+
+}
+
+
+
+#remember {
+
+  accent-color: #fff;
+
+}
+
+
+
+.forget label {
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+
+.forget label p {
+
+  margin-left: 8px;
+
+}
+
+
+
+.wrapper a {
+
+  color: #efefef;
+
+  text-decoration: none;
+
+}
+
+
+
+.wrapper a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+
+button {
+
+  background: #fff;
+
+  color: #000;
+
+  font-weight: 600;
+
+  border: none;
+
+  padding: 12px 20px;
+
+  cursor: pointer;
+
+  border-radius: 3px;
+
+  font-size: 16px;
+
+  border: 2px solid transparent;
+
+  transition: 0.3s ease;
+
+}
+
+
+
+button:hover {
+
+  color: #fff;
+
+  border-color: #fff;
+
+  background: rgba(255, 255, 255, 0.15);
+
+}
+
+
+
+.register {
+
+  text-align: center;
+
+  margin-top: 30px;
+
+  color: #fff;
+
+}
+
+/* Container for input fields to hold two fields side by side */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the fields */
+}
+
+.input-field {
+    flex: 1; /* Allow the fields to take up equal space */
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+    position: relative;
+}
+
+/* Ensure proper responsiveness - fields stack on small screens */
+@media (max-width: 768px) {
+    .input-row {
+        flex-direction: column; /* Stack fields vertically on smaller screens */
+    }
+}
+
+.wrapper {
+    margin-top: 300px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 600px; /* Set a max-width to ensure form doesn't stretch too wide */
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Maintain rest of the styles */
